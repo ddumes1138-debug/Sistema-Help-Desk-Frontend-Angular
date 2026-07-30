@@ -1,0 +1,45 @@
+h2 {
+  color: #2563eb;
+  margin-bottom: 20px;
+}
+
+.lista {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ticket-card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.ticket-card h3 {
+  color: #1e293b;
+}
+
+.ticket-card p {
+  color: #475569;
+}
+
+button {
+  margin-right: 10px;
+  margin-top: 10px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  background: #2563eb;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.ticket-card button:last-child {
+  background: #dc2626;
+}

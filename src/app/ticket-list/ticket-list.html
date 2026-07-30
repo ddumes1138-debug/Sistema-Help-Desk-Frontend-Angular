@@ -1,0 +1,33 @@
+<h2>Lista de Tickets</h2>
+
+<div class="lista">
+
+  @for (ticket of tickets; track ticket._id) {
+
+    <div class="ticket-card">
+
+      <h3>{{ ticket.titulo }}</h3>
+
+      <p>{{ ticket.descripcion }}</p>
+
+      <p>
+        <strong>Estado:</strong> {{ ticket.estado }}
+      </p>
+
+      <p>
+        <strong>Prioridad:</strong> {{ ticket.prioridad }}
+      </p>
+
+      <button (click)="editarTicket(ticket)">
+        Editar
+      </button>
+
+      <button (click)="eliminarTicket(ticket._id)">
+        Eliminar
+      </button>
+
+    </div>
+
+  }
+
+</div>

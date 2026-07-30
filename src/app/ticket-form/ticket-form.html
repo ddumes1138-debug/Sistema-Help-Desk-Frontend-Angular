@@ -1,0 +1,51 @@
+<h2>Crear Ticket</h2>
+
+<form (ngSubmit)="guardarTicket()">
+
+  <div>
+    <label>Título:</label><br>
+    <input 
+      type="text"
+      [(ngModel)]="ticket.titulo"
+      name="titulo">
+  </div>
+
+  <br>
+
+  <div>
+    <label>Descripción:</label><br>
+    <textarea 
+      rows="4"
+      [(ngModel)]="ticket.descripcion"
+      name="descripcion"></textarea>
+  </div>
+
+  <br>
+
+  <div>
+    <label>Estado:</label><br>
+    <select [(ngModel)]="ticket.estado" name="estado">
+      <option value="Abierto">Abierto</option>
+      <option value="En proceso">En proceso</option>
+      <option value="Cerrado">Cerrado</option>
+    </select>
+  </div>
+
+  <br>
+
+  <div>
+    <label>Prioridad:</label><br>
+    <select [(ngModel)]="ticket.prioridad" name="prioridad">
+      <option value="Alta">Alta</option>
+      <option value="Media">Media</option>
+      <option value="Baja">Baja</option>
+    </select>
+  </div>
+
+  <br>
+
+  <button type="submit">
+    Crear Ticket
+  </button>
+
+</form>
