@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class TicketService {
 
-  private apiUrl = 'http://localhost:5000/api/tickets';
+  private apiUrl = 'https://actividad8-backend.onrender.com/api/tickets';
 
   constructor(private http: HttpClient) { }
 
